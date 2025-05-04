@@ -1,0 +1,24 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  text-align: center;
+}
+header {
+  background-color: #f8b400;
+  padding: 20px;
+}
+section {
+  display: grid;
+  gap: 20px;
+}
+img {
+  width: 100%;
+  max-width: 300px;
+}
+button {
+  padding: 10px 20px;
+  background-color: #009879;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
