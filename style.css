@@ -1,8 +1,8 @@
 /* Base styles */
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f0f0; /* Light grey */
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-color: #e6f2ff; /* Light blue background */
 }
 
 /* Navigation Bar */
@@ -35,18 +35,16 @@ nav ul li a {
   font-weight: 500;
 }
 
-/* Hero Section with Grid and Background */
+/* Hero Section */
 .hero {
   display: grid;
   place-items: center;
-  grid-template-columns: 1fr;
-  height: 80vh;
-  background-image: url('https://place-puppy.com/800x600');
+  text-align: center;
+  padding: 80px 20px;
+  background-image: url('https://place-puppy.com/800x400');
   background-size: cover;
   background-position: center;
   color: white;
-  text-align: center;
-  padding: 20px;
 }
 
 .hero-text {
@@ -56,25 +54,53 @@ nav ul li a {
   max-width: 600px;
 }
 
-/* Image inside HTML */
-.hero-img {
-  width: 100%;
-  max-width: 300px;
-  margin: 20px 0;
-  border-radius: 10px;
-}
-
-/* Button */
 .donate-button {
+  display: inline-block;
+  margin-top: 20px;
   background-color: #ffc107;
-  color: #000;
+  color: black;
   padding: 12px 24px;
-  text-decoration: none;
   border-radius: 5px;
+  text-decoration: none;
   font-size: 16px;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .donate-button:hover {
   background-color: #e0a800;
+}
+
+/* Info Section using CSS Grid */
+.grid-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 60px 40px;
+  background-color: white;
+}
+
+.grid-box {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.grid-box h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.grid-box p {
+  color: #555;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  font-size: 14px;
+  color: #666;
+  border-top: 1px solid #ccc;
 }
